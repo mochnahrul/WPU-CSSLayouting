@@ -1,0 +1,97 @@
+/* Float merupakan properti pada CSS untuk mengatur posisi sebuah elemen */
+/* Sebuah elemen dapat dipaksa untuk berada di sebelah kiri atau kanan dari parent/pembungkusnya dengan menggunakan properti ini */
+
+/**
+  * For modern browsers
+  * 1. The space content is one way to avoid an Opera bug when the
+  *    contenteditable attribute is included anywhere else in the document.
+  *    Otherwise it causes space to appear at the top and bottom of elements
+  *    that are clearfixed.
+  * 2. The use of `table` rather than `block` is only necessary if using
+  *    `:before` to contain the top-margins of child elements.
+  */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+.cf {
+  *zoom: 1;
+}
+
+/* My CSS */
+
+/* Contoh penggunaan properti float untuk text wrapping */
+
+.container-satu {
+  width: 600px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 5px;
+}
+
+img {
+  float: left;
+  margin: 5px;
+}
+
+/* Contoh penggunaan properti float untuk image gallery */
+
+.container-dua {
+  width: 600px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 5px;
+}
+
+.kotak {
+  width: 80px;
+  height: 80px;
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  margin: 2px;
+  float: left;
+}
+
+/* Contoh penggunaan properti float untuk multi-column layout */
+
+.container-tiga {
+  width: 800px;
+  border: 1px solid black;
+  margin: auto;
+  padding: 5px;
+}
+
+.kiri {
+  width: 150px;
+  height: 500px;
+  background-color: salmon;
+  float: left;
+}
+
+.tengah {
+  width: 500px;
+  height: 500px;
+  background-color: lightblue;
+  float: left;
+}
+
+.kanan {
+  width: 150px;
+  height: 500px;
+  background-color: lightgreen;
+  float: left;
+}

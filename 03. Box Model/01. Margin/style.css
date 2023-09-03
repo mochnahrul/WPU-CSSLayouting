@@ -1,0 +1,85 @@
+/* CSS Box Model: margin, padding, border, content */
+/* - Margin adalah area transparan di sekitar kotak (di luar border) */
+/* - Padding adalah area transparan didalam kotak (antara content dan border) */
+/* - Border adalah batas di sekeliling content dan padding */
+/* - Content adalah konten sebenarnya di dalam box, bisa berupa teks atau gambar */
+
+/* Overlapping margin vertical */
+/* Margin tidak saling menambahkan untuk yang vertical, margin yang akan diambil adalah margin yang paling besar ukurannya */
+
+.vertical-satu {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin-bottom: 10px;
+}
+
+.vertical-dua {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-top: 10px;
+}
+
+/* Overlapping margin horizontal */
+/* Margin akan dijumlahkan untuk yang horizontal */
+
+.horizontal div {
+  display: inline-block;
+}
+
+.horizontal-satu {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin-right: 10px;
+}
+
+.horizontal-dua {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-left: 10px;
+}
+
+/* Negatif margin */
+/* Negatif margin akan membuat kotaknya bergerak berlawanan arah */
+
+.negatif-satu {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin-bottom: 10px;
+}
+
+.negatif-dua {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-top: -10px;
+}
+
+/* Margin auto */
+/* Margin auto akan membuat elemennya berada ditengah-tengah dari parentnya */
+
+.auto-satu {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auto-dua {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Shorthand Margin */
+/* Satu nilai: 50px (atas, bawah, kiri dan kanan akan ditambahkan ukurannya menjadi 50px) */
+/* Dua nilai: 50px (atas dan bawah) 100px (kiri dan kanan) */
+/* Tiga nilai: 30px (atas) 50px (kiri dan kanan) 70px (bawah) */
+/* Empat nilai: 10px (atas) 20px (kanan) 30px (bawah) 40px (kiri) */

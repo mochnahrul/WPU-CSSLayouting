@@ -1,0 +1,32 @@
+/* Position digunakan untuk menggeser sebuah elemen tanpa mempengaruhi elemen sekitarnya */
+/* Position: static, relative, absolute, fixed */
+
+/* Static */
+/* - Static adalah nilai default dari tiap-tiap elemen ketika tidak diberi properti position */
+/* - Menggunakan position selain static (non-static), akan membuat sebuah elemen menjadi seolah-olah berbeda dimensi dari elemen lainnya */
+/* - Elemen yang diberi position selain static dapat menggunakan properti top, left, bottom dan right untuk mengatur posisinya */
+
+/* Relative */
+/* - Ketika menggerakkan elemen dengan posisi relative (menggunakan properti top, left, bottom dan right), ruang yang ditempati oleh elemen tersebut masih ada */
+/* - Ketika menggerakkan elemen dengan posisi relative, elemen akan bergerak relatif terhadap posisi semula-nya */
+/* - Jika memberi properti top: 0; dan left: 0; maka elemen tidak berubah posisinya */
+
+div {
+  width: 200px;
+  height: 200px;
+}
+
+.satu {
+  background-color: salmon;
+}
+
+.dua {
+  background-color: lightblue;
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+.tiga {
+  background-color: lightgreen;
+}

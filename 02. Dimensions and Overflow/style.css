@@ -1,0 +1,29 @@
+/* Dimensi memiliki dua properti di CSS, width untuk lebar dan height untuk tinggi  */
+/* Unit/satuan dari dimensi bermacam-macam contohnya px (nilainya absolute), % (nilainya relative terhadap elemen parentnya) dan satuan dari ukuran di dunia nyata */
+
+/* overflow -> Untuk mengatur elemen yang tidak cukup tempat dari parentnya */
+
+div {
+  display: inline-block;
+}
+
+.satu {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  overflow: auto;
+}
+
+.dua {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  overflow: hidden;
+}
+
+.tiga {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  overflow: scroll;
+}
